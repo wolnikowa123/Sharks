@@ -164,7 +164,7 @@ const MobileCard = styled.div`
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid ${({ theme }) => theme.colors.teal};
-  box-shadow: 0 12px 32px rgba(15, 124, 143, 0.45);
+  box-shadow: none;
   background: radial-gradient(
     160% 160% at 50% 0%,
     rgba(15, 124, 143, 0.45),

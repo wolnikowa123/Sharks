@@ -82,7 +82,10 @@ const Button = styled.a<{ variant?: "primary" | "ghost" }>`
   font-weight: 800;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
   text-align: center;
   border: 2px solid transparent;
   margin-top: auto;
@@ -207,6 +210,7 @@ export default function Pricing() {
                 display: "flex",
                 color: "#8d8d8d",
                 marginTop: "-10px",
+                marginBottom: "5px",
                 alignItems: "center",
                 gap: 8,
               }}
