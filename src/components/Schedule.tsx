@@ -180,6 +180,10 @@ const TableHeader = styled(Row)`
   & + & {
     border-top: none;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Time = styled.div`
@@ -194,6 +198,11 @@ const GroupName = styled.div`
 const Extra = styled.div`
   font-size: 0.85rem;
   opacity: 0.8;
+
+  @media (max-width: 768px) {
+    grid-column: 1 / -1;
+    margin-top: 6px;
+  }
 `;
 
 const LinksSpan = styled.span`

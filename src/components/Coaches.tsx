@@ -69,8 +69,11 @@ const CardInner = styled.button<{ flipped: boolean }>`
   aspect-ratio: 4 / 5.2;
   cursor: pointer;
   transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s,
-    border-color 0.3s, background 0.3s;
+  transition:
+    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.3s,
+    border-color 0.3s,
+    background 0.3s;
   border: 2px solid ${({ theme }) => theme.colors.teal};
   box-shadow: 0 12px 32px rgba(15, 124, 143, 0.45);
   background: radial-gradient(
@@ -80,6 +83,7 @@ const CardInner = styled.button<{ flipped: boolean }>`
   );
   transform: ${({ flipped }) =>
     flipped ? "rotateY(180deg)" : "rotateY(0deg)"};
+  will-change: transform;
 
   &:hover,
   &:focus-visible {
@@ -112,6 +116,7 @@ const Back = styled(Face)`
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 8px;
+  pointer-events: none;
 `;
 
 /** --- wspólne img --- */
@@ -255,18 +260,23 @@ const data: Coach[] = [
 /* Desktop / tablet flip card */
 function CoachCardDesktop({ coach }: { coach: Coach }) {
   const [flipped, setFlipped] = React.useState(false);
-  const toggle = () => setFlipped((f) => !f);
+  const timeoutRef = React.useRef<NodeJS.Timeout>();
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setFlipped(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setFlipped(false), 100);
+  };
 
   return (
     <CardWrap>
       <CardInner
         flipped={flipped}
-        onClick={toggle}
-        onKeyDown={(e) =>
-          (e.key === "Enter" || e.key === " ") && (e.preventDefault(), toggle())
-        }
-        onMouseEnter={() => setFlipped(true)}
-        onMouseLeave={() => setFlipped(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         aria-label={`${coach.name} – więcej informacji`}
       >
         <Front>
