@@ -13,7 +13,7 @@ const Wrap = styled.section`
   padding: 120px 20px 90px 20px;
   overflow: hidden;
   background: radial-gradient(
-    1600px 900px at 85% 35%,
+    1200px 650px at 85% 35%,
     rgba(18, 147, 169, 0.5) 0%,
     rgba(15, 124, 143, 0) 50%,
     transparent 92%
@@ -27,6 +27,7 @@ const Inner = styled.div`
   grid-template-columns: 1.2fr 1fr;
   gap: 28px;
   align-items: center;
+  position: relative;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -59,10 +60,14 @@ const Card = styled(motion.div)`
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
     padding: 14px;
     gap: 8px;
+
+    & > img:nth-child(n + 2) {
+      display: none;
+    }
   }
 `;
 
@@ -106,9 +111,17 @@ const SharkButton = styled.a`
   cursor: pointer;
   overflow: visible;
   transition: transform 0.2s ease;
+  z-index: 10;
 
   &:hover {
     transform: translateY(-2px);
+  }
+
+  @media (max-width: 900px) {
+    left: 0%;
+    // transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: -30px;
   }
 `;
 const Fin = styled.svg`
