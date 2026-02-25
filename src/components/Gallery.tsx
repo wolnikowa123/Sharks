@@ -458,7 +458,7 @@ export default function Gallery() {
   }, [open]);
 
   return (
-    <Section id="galeria">
+    <Section id="galeria" style={{ background: "transparent" }}>
       <Container>
         <Badge>Galeria</Badge>
         <Title dark>Treningi i campy</Title>
