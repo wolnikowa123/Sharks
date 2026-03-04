@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Badge } from "./Pricing";
 import { Phone, Mail, Instagram, Facebook } from "lucide-react";
 import basketballIcon from "@/assets/Sharks_Pomorze_basket-removebg-preview.png";
@@ -141,7 +143,7 @@ export default function Contact() {
     });
     // https://script.google.com/home/projects/1KhQKmN-rN5SJxVyTxMyHz9peiosa2kA_S853Zm8AXsiWCxeVkoZjU6vI/edit strona ze skryptem
     await fetch(
-      "https://script.google.com/macros/s/AKfycbx_HCuAptwKqN_8GWLqDDkEweT5O1nVANbjhn0m6mnALDkULZREj3dE4bhwr_-L6seGXg/exec",
+      "https://script.google.com/macros/s/AKfycbwt8emQdpEauXHiZKbaN1pB0J0LuMeukE5DjosUBxFtZ3-ZqoF2K67DsmNoaCnTdIteDA/exec",
       {
         method: "POST",
         mode: "no-cors", // ⬅️ KLUCZ
@@ -150,7 +152,7 @@ export default function Contact() {
     );
 
     // TU ZAWSZE ZAKŁADASZ SUKCES
-    alert("Wysłano! Odezwzemy się wkrótce 💪");
+    toast.success("Wysłano! Odezwzemy się wkrótce");
 
     setName("");
     setPhone("");
@@ -363,6 +365,17 @@ export default function Contact() {
           </Info>
         </InnerContent>
       </Inner>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </Wrap>
   );
 }
