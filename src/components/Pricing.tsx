@@ -136,6 +136,16 @@ const List = styled.ul`
 `;
 
 export default function Pricing() {
+  const scrollToWithOffset = (id: string) => {
+    const el = document.querySelector(id);
+    if (!el) return;
+
+    const y = el.getBoundingClientRect().top + window.pageYOffset - 35;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
+
+    close(); // zamyka menu mobilne
+  };
   return (
     <Wrap id="cennik">
       <Inner>
@@ -167,7 +177,15 @@ export default function Pricing() {
               </div>
               390 zł / mies.
             </PriceBadge>
-            <Button href="#zapis" className="btn" variant="ghost">
+            <Button
+              href="#zapis"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToWithOffset("#zapis");
+              }}
+              className="btn"
+              variant="ghost"
+            >
               Zarezerwuj termin
             </Button>
           </Card>
@@ -185,9 +203,11 @@ export default function Pricing() {
               <li>Obozy sportowe w zimę ❄️</li>
             </List>
             <Button
-              href="https://www.sharkstravel.pl"
-              target="_blank"
-              rel="noreferrer"
+              href="#zapis"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToWithOffset("#zapis");
+              }}
               variant="ghost"
             >
               Zapisz się na listę

@@ -82,7 +82,9 @@ const Burger = styled.button<{ open: boolean }>`
     border-radius: 999px;
     background: #fff;
     position: relative;
-    transition: transform 0.25s ease, opacity 0.2s ease;
+    transition:
+      transform 0.25s ease,
+      opacity 0.2s ease;
   }
 
   span::before,
@@ -94,7 +96,10 @@ const Burger = styled.button<{ open: boolean }>`
     height: 2px;
     border-radius: 999px;
     background: #fff;
-    transition: transform 0.25s ease, top 0.25s ease, opacity 0.2s ease;
+    transition:
+      transform 0.25s ease,
+      top 0.25s ease,
+      opacity 0.2s ease;
   }
 
   span::before {
@@ -152,7 +157,9 @@ const MobileMenu = styled.nav<{ open: boolean }>`
     transform: translateY(${({ open }) => (open ? "0" : "-8px")});
     opacity: ${({ open }) => (open ? 1 : 0)};
     pointer-events: ${({ open }) => (open ? "auto" : "none")};
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
 
     padding: 10px 16px 16px;
     display: flex;
