@@ -61,9 +61,14 @@ const Card = styled.form`
     transition: 0.2s ease;
   }
 
-  button:hover {
+  button:hover:not(:disabled) {
     filter: brightness(1.05);
     transform: translateY(-2px);
+  }
+
+  button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
   }
 `;
 
@@ -118,6 +123,22 @@ const CopyNote = styled.div`
   color: #fff;
 `;
 
+const Spinner = styled.div`
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [phone, setPhone] = React.useState("");
@@ -125,6 +146,7 @@ export default function Contact() {
   const [message, setMessage] = React.useState(
     "Chcę zapisać dziecko na trening próbny.",
   );
+  const [loading, setLoading] = React.useState(false);
 
   const [copied, setCopied] = React.useState<null | "email" | "phone">(null);
 
@@ -134,6 +156,7 @@ export default function Contact() {
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
+    setLoading(true);
 
     const params = new URLSearchParams({
       name,
@@ -154,6 +177,7 @@ export default function Contact() {
     // TU ZAWSZE ZAKŁADASZ SUKCES
     toast.success("Wysłano! Odezwzemy się wkrótce");
 
+    setLoading(false);
     setName("");
     setPhone("");
     setEmail("");
@@ -236,7 +260,17 @@ export default function Contact() {
               onChange={(e) => setMessage(e.target.value)}
             />
 
-            <button type="submit">Wyślij</button>
+            <button
+              type="submit"
+              disabled={loading}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              {loading ? <Spinner /> : "Wyślij"}
+            </button>
           </Card>
 
           <Info>
