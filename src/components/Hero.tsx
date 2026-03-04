@@ -163,11 +163,14 @@ export default function Hero() {
     <Wrap id="start">
       <Inner>
         <div>
-          <Title>Sharks — szkółka sportowa dla dzieci</Title>
+          <Title>
+            Sharks Gdynia — Sport dla Twojego dziecka bez presji, stresu i
+            siedzenia na ławce.
+          </Title>
           <Lead>
-            U nas każde dziecko jest mile widziane. Mamy koszykówkę, siatkówkę i
-            piłkę nożną — w tygodniu trenujemy, a w ferie i wakacje jedziemy na
-            obozy. Dołączcie do naszej sportowej rodziny!
+            U nas każde dziecko jest mile widziane. Gramy w koszykówkę,
+            siatkówkę i piłkę nożną. Po szkole trenujemy, a w ferie i wakacje
+            jeździmy na obozy sportowe.
           </Lead>
           <SharkButton href="#cennik">
             <Fin viewBox="0 0 26 24" aria-hidden="true">

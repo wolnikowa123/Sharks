@@ -121,7 +121,7 @@ export default function Contact() {
   const [phone, setPhone] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState(
-    "Chcę zapisać dziecko na trening próbny."
+    "Chcę zapisać dziecko na trening próbny.",
   );
 
   const [copied, setCopied] = React.useState<null | "email" | "phone">(null);
@@ -146,7 +146,7 @@ export default function Contact() {
         method: "POST",
         mode: "no-cors", // ⬅️ KLUCZ
         body: params,
-      }
+      },
     );
 
     // TU ZAWSZE ZAKŁADASZ SUKCES
@@ -202,9 +202,12 @@ export default function Contact() {
 
         <InnerContent>
           <Card id="zapis" onSubmit={submit}>
-            <h2>Umów się na trening!</h2>
+            <h2 style={{ marginBottom: "-5px" }}>Kontakt</h2>
             <p>
-              Zostaw numer, a w ciągu <strong>2 godzin</strong> oddzwonimy.
+              Umów trening z Sharks i daj dziecku szansę, na korzyści ze sportu
+              bez presji.
+              <br /> Zostaw nam swój numer. Oddzwonimy do Ciebie w ciągu 2
+              godzin
             </p>
 
             <input

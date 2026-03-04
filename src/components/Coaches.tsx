@@ -210,6 +210,12 @@ const MobileBio = styled.p`
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.9);
 `;
+const Lead = styled.p`
+  margin: 0 0 26px;
+  opacity: 0.9;
+  font-size: clamp(16px, 2.2vw, 20px);
+  margin-top: 12px;
+`;
 
 /* dane trenerów w zadanej kolejności */
 const data: Coach[] = [
@@ -319,7 +325,10 @@ export default function Coaches() {
     <Wrap id="trenerzy">
       <Inner>
         <Badge>Trenerzy</Badge>
-        <h2>Poznaj naszych trenerów</h2>
+        <Lead>
+          Opieka, wsparcie i zdrowy sport bez presji. <br />
+          Poznaj trenerów, którzy budują rodzinę Sharks
+        </Lead>
 
         {/* Desktop / tablet – flip cards w siatce */}
         <Grid>

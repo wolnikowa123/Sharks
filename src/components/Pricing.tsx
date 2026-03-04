@@ -140,10 +140,10 @@ export default function Pricing() {
     <Wrap id="cennik">
       <Inner>
         <Badge>Oferta</Badge>
-        <Title>Treningi i obozy</Title>
+        <Title>Treningi i obozy Sharks</Title>
         <Lead>
-          Dopasowane do wieku i poziomu. Technika, kondycja, analiza wideo i gry
-          zadaniowe.
+          Budzimy w dzieciach pasje do zdrowego ruchu i sportu. Z nami chętniej
+          wracają na boisko, niż przed ekran
         </Lead>
 
         <Cards>
@@ -151,36 +151,38 @@ export default function Pricing() {
           <Card>
             <CardTitle>Treningi</CardTitle>
             <CardText>
-              Cena za trening raz w tygodniu. Przy większej ilości treningów
-              naliczamy rabat.
+              Cena za miesiąc treningów twojego dziecka po szkole. Koszykówka,
+              siatkówka, piłka nożna - skontaktuj się z nami, aby wybrać zajęcia
+              dla swojego dziecka.
             </CardText>
             <PriceBadge style={{ marginBottom: "0", fontWeight: "lighter" }}>
               <div style={{ opacity: 0.8, fontSize: "14px", fontWeight: 600 }}>
-                Zajęcia raz w tygodniu
+                Zajęcia 1 w tygodniu
               </div>
-              250 zł / msc.
+              250 zł / mies.
             </PriceBadge>
             <PriceBadge style={{ fontWeight: "lighter" }}>
               <div style={{ opacity: 0.8, fontSize: "14px", fontWeight: 600 }}>
-                Zajęcia dwa/trzy razy w tygodniu
+                Zajęcia 2/3 razy w tygodniu
               </div>
-              390 zł / msc.
+              390 zł / mies.
             </PriceBadge>
             <Button href="#zapis" className="btn" variant="ghost">
-              Umów termin
+              Zarezerwuj termin
             </Button>
           </Card>
 
           {/* KARTA 2 */}
           <Card>
-            <CardTitle>Obozy w lato i zime</CardTitle>
+            <CardTitle>Obozy letnie i zimowe</CardTitle>
             <CardText>
-              Półkolonie w lato i zimę. Treningi 2× dziennie, gry planszowe,
-              basen, dyskoteka integracja.
+              Wakacje od sportu? Wolimy wakacje na sportowo! Półkolonie Sharks
+              to treningi, integracja, planszówki, basen, oraz rozrywki
+              dopasowane do wieku grupy.
             </CardText>
             <List>
-              <li>Turnusy lato</li>
-              <li>Turnusy zima</li>
+              <li>Obozy sportowe w lecie ☀️</li>
+              <li>Obozy sportowe w zimę ❄️</li>
             </List>
             <Button
               href="https://www.sharkstravel.pl"
@@ -196,8 +198,8 @@ export default function Pricing() {
           <Card>
             <CardTitle>Pierwszy trening</CardTitle>
             <CardText>
-              Zabierz dziecko na pierwsze zajęcia za free. Jeśli się spodobmy to
-              witamy w rodzinie Sharks!
+              Zapisz dziecko na pierwszy, darmowy trening. Jeśli mu się spodoba
+              - witamy w rodzinie!
             </CardText>
             <PriceBadge>
               <div style={{ opacity: 0.8, fontSize: "14px", fontWeight: 600 }}>
@@ -215,7 +217,7 @@ export default function Pricing() {
                 gap: 8,
               }}
             >
-              <CheckCircle2 size={16} /> wytrenowaliśmy już 67 dzieci!
+              <CheckCircle2 size={16} /> Już 220 dzieci trenuje z Sharks!
             </span>
             <Button href="#kontakt" variant="primary">
               Zapytaj o dostępność

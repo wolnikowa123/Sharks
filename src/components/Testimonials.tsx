@@ -57,6 +57,18 @@ const Author = styled.cite`
   font-weight: bold;
 `;
 
+const Title = styled.h2`
+  font-size: clamp(28px, 5.2vw, 64px);
+  line-height: 1.05;
+  margin: 14px 0 8px;
+`;
+const Lead = styled.p`
+  margin: 0 0 26px;
+  opacity: 0.9;
+  font-size: clamp(16px, 2.2vw, 20px);
+  margin-top: 12px;
+`;
+
 const opinions = [
   {
     text: "Córka zaczęła trenować od zera, a po miesiącu widzimy ogromny progres. Fantastyczne podejście do dzieci!",
@@ -101,7 +113,10 @@ export default function Testimonials() {
     <Wrap id="opinie">
       <Inner>
         <Badge>Opinie</Badge>
-        <h2>Poznaj opinie rodziców którzy nam zaufali</h2>
+        <Lead>
+          Najlepsza recenzja, to uśmiech i sprawność twojego dziecka! <br />
+          Zobacz, co jeszcze cenią sobie rodzice i dzieci trenujące z Sharks:
+        </Lead>
         <Grid>
           {opinions.map((o, i) => (
             <Card

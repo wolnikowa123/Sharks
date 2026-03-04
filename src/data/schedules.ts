@@ -13,7 +13,7 @@ export const sections: Section[] = [
     key: "basketball",
     title: "Koszykówka",
     description:
-      "Treningi dla dzieci i młodzieży — od podstaw po grupy zaawansowane. Każdy znajdzie coś dla siebie!",
+      "Sprawność, zwinność, koncentracja. Zajęcia koszykówki z Sharks, to trening, który łączy dobrą zabawę oraz zdrowy rozwój - od podstaw po grupy zaawansowane:",
     venues: [
       {
         name: "ZSP2, ul. Staffa 10",
@@ -134,7 +134,7 @@ export const sections: Section[] = [
     key: "football",
     title: "Piłka nożna",
     description:
-      "Zabawa, koordynacja i technika — zajęcia piłkarskie dla najmłodszych.",
+      "Siła, koordynacja, praca zespołowa. Na zajęciach z Sharks twoje dziecko za dobrze się bawi, żeby siedzieć na ławce. Wybierz grupę wiekową i pasującą Ci lokalizację:",
     venues: [
       {
         name: "SP20, ul. Starodworcowa",
@@ -154,7 +154,7 @@ export const sections: Section[] = [
     key: "volleyball",
     title: "Siatkówka",
     description:
-      "Dla początkujących i zaawansowanych — świetna atmosfera i dużo gry.",
+      "Zwinność, sprawność, pewność siebie. Na zajęciach z Sharks liczy się rozwój i dobra zabawa, a nie rankingi i tabelki. Wybierz pasującą grupę i poziom zaawansowania:",
     venues: [
       {
         name: "SP20, ul. Starodworcowa",
