@@ -71,40 +71,42 @@ const Lead = styled.p`
 
 const opinions = [
   {
-    text: "Córka zaczęła trenować od zera, a po miesiącu widzimy ogromny progres. Fantastyczne podejście do dzieci!",
-    author: "Mama Oli",
+    text: "Widać postępy u dziecka, organizacja w klubie jest dobra. Wszystko jest na wysokim poziomie.",
+    author: "Zadowolony rodzic 👨‍👩‍👧‍👦",
+  },
+
+  {
+    text: "Treningi są wymagające, ale ja to doceniam, bo wiele się na nich uczę.",
+    author: "mały Sharks 🦈",
   },
   {
-    text: "Świetne indywidualne podejście, syn w końcu przestał bać się gry 1 na 1 i zaczął wierzyć w siebie.",
-    author: "Tata Kacpra (13)",
+    text: "W drużynie jest dobra atmosfera, szczególnie w gierki w środy. Treningi są intensywne przez co widzi się progres.",
+    author: "starszy Sharks 🦈",
+  },
+
+  {
+    text: "Polecam treningi z Gdynia Sharks, świetne miejsce dla osób z zajawką na koszykówkę, niezależnie od wieku.",
+    author: "starszy Sharks 🦈",
   },
   {
-    text: "Obóz PRO-BASKET okazał się strzałem w dziesiątkę — super organizacja i atmosfera.",
-    author: "Rodzice Zuzi",
+    text: "TRENINGI SĄ SUPER!!",
+    author: "mały Sharks 🦈",
   },
   {
-    text: "Dużo techniki i konkretna praca — nie ma czasu na stanie. Polecam z czystym sumieniem.",
-    author: "Trener szkolny",
+    text: "Syn z każdego treningu wraca do domu zadowolony!",
+    author: "Zadowolony rodzic 👨‍👩‍👧‍👦",
   },
   {
-    text: "Bardzo profesjonalnie, a jednocześnie z dużym sercem. Syn wraca z treningów z mega energią.",
-    author: "Mama Antka",
+    text: "Treningi bardzo fajnie, nie ciężkie a idealne. Trenerzy też są fajni oraz śmieszni. Jednym słowem trenerzy są super.",
+    author: "mały Sharks 🦈",
   },
   {
-    text: "Najlepsze zajęcia, na jakich byłem. Dużo gry, analiza wideo, poprawa motoryki.",
-    author: "Filip (16)",
+    text: "Trenerzy mają świetne podejście do dzieciaków, motywują, a także uczą ich dyscypliny.",
+    author: "Zadowolony rodzic 👨‍👩‍👧‍👦",
   },
   {
-    text: "Świetny kontakt z rodzicami i jasne cele treningowe. Widać pasję i doświadczenie.",
-    author: "Rodzic uczestnika",
-  },
-  {
-    text: "Po campie syn dostał większą pewność siebie i awansował do wyższej grupy. Dziękujemy!",
-    author: "Mama Piotrka",
-  },
-  {
-    text: "Super miejsce do rozwoju — luźna atmosfera, ale konkretny trening i wymagania.",
-    author: "Patryk (14)",
+    text: "Jakbym miała więcej czasu to bym chodziła na każdy trening. Bardzo jest fajnie.",
+    author: "mały Sharks 🦈",
   },
 ];
 
