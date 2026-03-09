@@ -223,46 +223,49 @@ const data: Coach[] = [
     name: "Olaf - założyciel Sharks",
     role: "Koszykówka",
     photo: PortraitOlaf,
-    bio: "Olaf – sekcja koszykówki. Krótki opis w przygotowaniu, lorem ipsum dolor sit amet.",
+    bio: "Hej, jestem Olaf - jestem tenerem II klasy żeglarstwa, absolwentem AWFiS Gdańsk. Posiadam ponad 16-letnie doświadczenie w pracy z dziećmi na boisku. Moi wychowankowie to między innymi: reprezentaci kadry pomorze, kadry polski, mistrzowie i wicemistrzowie Polski.",
   },
   {
     name: "Iwo",
     role: "Koszykówka",
     photo: PortraitIwo,
-    bio: "Iwo – sekcja koszykówki. Placeholder opisu, który później podmienimy na konkrety.",
+    bio: "Cześć, jestem Iwo - trener i starszy brat w Sharks. Mam na koncie 2 złote medale w młodzieżowych mistrzostwach Polski. Doświadczenie z regularnych występów na krajowej scenie dziś przekładam na treningi z zawodnikami.",
   },
   {
     name: "Sandra",
     role: "Siatkówka",
     photo: PortraitSandra,
-    bio: "Sandra – sekcja siatkówki. Tutaj pojawi się opis doświadczenia, teraz małe lorem ipsum.",
+    bio: "Siema, tutaj Sandra. Jako była zawodniczka z 12-letnim stażem na ataku, w Sharks od 2021 roku stawiam na profesjonalizm i realne efekty. Obserwowanie uśmiechów i wewnętrznej satysfakcji u moich podopiecznych jest dla mnie największą motywacją i spełnieniem w tej pracy.",
   },
   {
     name: "Tomek",
     role: "Koszykówka, piłka nożna",
     photo: PortraitTomek,
-    bio: "Tomek – sekcja koszykówki i piłki nożnej. Krótki opis roli i stylu pracy, lorem ipsum.",
+    bio: "Cześć, jestem Tomek - W Sharks Gdynia jestem trenerem zarówno koszykówki jak i piłki nożnej. Koszykówką zajmuje się od 6 lat. Piłką nożną już 11, podczas których trenowałem pod czujnym okiem trenerów w klubie Arka Gdynia.",
   },
   {
     name: "Zuza",
     role: "Siatkówka",
     photo: PortraitZuza,
-    bio: "Zuza – sekcja siatkówki. Opis trenera będzie uzupełniony, na razie prosty placeholder.",
+    bio: "Hej, z tej strony Zuza. Jestem trenerką pięknego sportu, jakim jest siatkówka. Z Siatkówką jestem związana od 6. roku życia. Teraz swoją wiedzę, doświadczenia i umiejętności z radością przekazuje najmłodszym Sharksom.",
   },
   {
     name: "Łukasz",
     role: "Koszykówka",
     photo: PortraitLukasz,
-    bio: "Łukasz – sekcja koszykówki. Tekst o doświadczeniu i podejściu treningowym do dopisania.",
+    bio: "Siema - jestem Łukasz. W pracy z młodzieżą skupiam się na radości z basketu połączonej z etyką pracy. Każdy trening to dla mnie okazja, by pokazać zawodnikom, że granice ich możliwości są znacznie dalej, niż im się wydaje.",
   },
   {
     name: "Michał",
     role: "Siatkówka",
     photo: PortraitMichal,
-    bio: "Michał – sekcja siatkówki. Krótki opis profilu trenerskiego, lorem ipsum dolor sit amet.",
+    bio: "Hejka, jestem Michał – Trener Piłki Siatkowej PZPS nr licencji 1971/2025. Z siatkówką związany od 2002 roku. W pracy z młodzieżą największą radość sprawia mi ich rozwój oraz obserwowanie rosnącego zaangażowania.",
   },
 ];
-
+// todo dodac martyne
+// Hej, nazywam się Martyna i jestem trenerką siatkówki w Sharks 🏐
+// Najważniejsze w treningach, które prowadzę, są dla mnie rozwój i rozwijanie wiary we własne umiejętności u dzieci.
+// todo tekst dla michala
 /* Desktop / tablet flip card */
 function CoachCardDesktop({ coach }: { coach: Coach }) {
   const [flipped, setFlipped] = React.useState(false);

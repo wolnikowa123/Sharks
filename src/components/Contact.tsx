@@ -328,7 +328,7 @@ export default function Contact() {
 
             {/* Logotypy sekcji */}
             <Box>
-              <strong>Logotypy sekcji</strong>
+              <strong>Nasze sekcje</strong>
               <div
                 style={{
                   display: "flex",
