@@ -183,8 +183,6 @@ export default function Pricing() {
                 e.preventDefault();
                 scrollToWithOffset("#zapis");
               }}
-              className="btn"
-              variant="ghost"
             >
               Zarezerwuj termin
             </Button>
@@ -208,7 +206,6 @@ export default function Pricing() {
                 e.preventDefault();
                 scrollToWithOffset("#zapis");
               }}
-              variant="ghost"
             >
               Zapisz się na listę
             </Button>
@@ -239,7 +236,14 @@ export default function Pricing() {
             >
               <CheckCircle2 size={16} /> Już 220 dzieci trenuje z Sharks!
             </span>
-            <Button href="#kontakt" variant="primary">
+            <Button
+              href="#kontakt"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToWithOffset("#zapis");
+              }}
+              variant="primary"
+            >
               Zapytaj o dostępność
             </Button>
           </Card>
