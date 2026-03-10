@@ -256,10 +256,10 @@ const data: Coach[] = [
     bio: "Siema - jestem Łukasz. W pracy z młodzieżą skupiam się na radości z basketu połączonej z etyką pracy. Każdy trening to dla mnie okazja, by pokazać zawodnikom, że granice ich możliwości są znacznie dalej, niż im się wydaje.",
   },
   {
-    name: "Michał",
+    name: "Mateusz",
     role: "Siatkówka",
     photo: PortraitMichal,
-    bio: "Hejka, jestem Michał – Trener Piłki Siatkowej PZPS nr licencji 1971/2025. Z siatkówką związany od 2002 roku. W pracy z młodzieżą największą radość sprawia mi ich rozwój oraz obserwowanie rosnącego zaangażowania.",
+    bio: "Hejka, jestem Mateusz – Trener Piłki Siatkowej PZPS nr licencji 1971/2025. Z siatkówką związany od 2002 roku. W pracy z młodzieżą największą radość sprawia mi ich rozwój oraz obserwowanie rosnącego zaangażowania.",
   },
 ];
 // todo dodac martyne
