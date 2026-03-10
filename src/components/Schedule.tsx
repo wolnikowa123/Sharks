@@ -31,7 +31,9 @@ const Tab = styled.button<{ active: boolean }>`
   opacity: ${({ active }) => (active ? 1 : 0.6)};
   border-bottom: 2px solid
     ${({ active, theme }) => (active ? theme.colors.teal : "transparent")};
-  transition: opacity 0.15s ease, border-color 0.2s ease;
+  transition:
+    opacity 0.15s ease,
+    border-color 0.2s ease;
 
   display: inline-flex;
   align-items: center;
@@ -255,8 +257,8 @@ export default function Schedule() {
             groupName: g.name,
             venueName: v.name,
           });
-        })
-      )
+        }),
+      ),
     );
     return out;
   }, [sec]);
@@ -275,7 +277,7 @@ export default function Schedule() {
     const set = new Set<string>();
     rows.forEach((r) => set.add(r.day));
     return Array.from(set).sort(
-      (a, b) => weekOrder.indexOf(a) - weekOrder.indexOf(b)
+      (a, b) => weekOrder.indexOf(a) - weekOrder.indexOf(b),
     );
   }, [rows]);
 
@@ -366,7 +368,7 @@ export default function Schedule() {
           <p>Obozy ➜ przejdź na stronę SharksTravel.pl</p>
         </GoCamps>
         <LinksSpan>{" ● "}</LinksSpan>
-        <GoCamps href="https://www.probasket.pl" target="_blank">
+        <GoCamps href="https://www.probasket.com.pl" target="_blank">
           PRO-BASKET ➜ przejdź na stronę probasketcamp.pl
         </GoCamps>
       </Inner>
