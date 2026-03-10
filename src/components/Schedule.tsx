@@ -368,7 +368,7 @@ export default function Schedule() {
           <p>Obozy ➜ przejdź na stronę SharksTravel.pl</p>
         </GoCamps>
         <LinksSpan>{" ● "}</LinksSpan>
-        <GoCamps href="https://www.probasket.com.pl" target="_blank">
+        <GoCamps href="https://www.probasketcamp.pl" target="_blank">
           PRO-BASKET ➜ przejdź na stronę probasketcamp.pl
         </GoCamps>
       </Inner>
