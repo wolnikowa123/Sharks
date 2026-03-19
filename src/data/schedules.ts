@@ -102,7 +102,7 @@ export const sections: Section[] = [
             slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
           },
           {
-            name: "Grupa 15–20",
+            name: "Grupa 16–30+",
             slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
           },
         ],
@@ -123,7 +123,7 @@ export const sections: Section[] = [
             slots: [{ day: "Wtorek", time: "19:30–21:00" }],
           },
           {
-            name: "Grupa 15–20",
+            name: "Grupa 16–30+",
             slots: [{ day: "Wtorek", time: "19:30–21:00" }],
           },
         ],
@@ -160,7 +160,7 @@ export const sections: Section[] = [
         name: "SP20, ul. Starodworcowa",
         groups: [
           {
-            name: "Grupy zaawansowane 15–20+",
+            name: "Grupy zaawansowane 16–30+",
             slots: [{ day: "Wtorek", time: "18:30–20:00" }],
           },
           {
