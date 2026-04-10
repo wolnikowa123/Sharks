@@ -68,7 +68,7 @@ export const sections: Section[] = [
         ],
       },
       {
-        name: "Witomino/Wiczlino — 1 ALO, ul. Narcyzowa",
+        name: "Witomino/Wiczlino — 1 ALO, ul. Narcyzowa 6",
         groups: [
           {
             name: "Grupa 5–8 lat",
