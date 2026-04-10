@@ -84,6 +84,10 @@ export const sections: Section[] = [
               { day: "Czwartek", time: "17:00–18:30" },
             ],
           },
+          {
+            name: "Dla wszystkich",
+            slots: [{ day: "Czwartek", time: "16:00–17:30" }],
+          },
         ],
       },
       {
