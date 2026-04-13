@@ -115,9 +115,7 @@ export const sections: Section[] = [
         groups: [
           {
             name: "Grupa 5–8 lat",
-            slots: [
-              { day: "Piątek", time: "17:30–18:30" },
-            ],
+            slots: [{ day: "Piątek", time: "17:30–18:30" }],
           },
         ],
       },
