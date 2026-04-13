@@ -22,7 +22,6 @@ export const sections: Section[] = [
             name: "Grupa 5–7 lat",
             slots: [
               { day: "Wtorek", time: "17:00–18:00" },
-              { day: "Piątek", time: "17:30–18:30" },
               { day: "Sobota", time: "11:00–12:00" },
             ],
           },
@@ -85,7 +84,7 @@ export const sections: Section[] = [
             ],
           },
           {
-            name: "Dla wszystkich",
+            name: "Grupa 5-13 lat",
             slots: [{ day: "Czwartek", time: "16:00–17:30" }],
           },
         ],
@@ -108,6 +107,17 @@ export const sections: Section[] = [
           {
             name: "Grupa 16–30+",
             slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
+          },
+        ],
+      },
+      {
+        name: "Gdynia SP20, ul. Starodworcowa 36",
+        groups: [
+          {
+            name: "Grupa 5–8 lat",
+            slots: [
+              { day: "Piątek", time: "17:30–18:30" },
+            ],
           },
         ],
       },
