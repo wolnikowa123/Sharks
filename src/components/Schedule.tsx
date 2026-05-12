@@ -154,12 +154,12 @@ const DayLabel = styled.h3`
 const Row = styled.div`
   padding: 8px 0;
   display: grid;
-  grid-template-columns: 80px minmax(0, 1fr);
+  grid-template-columns: 40% 60%;
   column-gap: 12px;
   row-gap: 4px;
 
   @media (min-width: 768px) {
-    grid-template-columns: 90px 1.2fr 1.2fr;
+    grid-template-columns: 15% 25% 60%;
     align-items: center;
   }
 
@@ -178,6 +178,7 @@ const TableHeader = styled(Row)`
   position: sticky;
   top: 0;
   z-index: 2;
+  grid-template-columns: 15% 25% 60%;
 
   & + & {
     border-top: none;
@@ -195,6 +196,11 @@ const Time = styled.div`
 
 const GroupName = styled.div`
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    text-align: right;
+    margin-right: 15px;
+  }
 `;
 
 const Extra = styled.div`

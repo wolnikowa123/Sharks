@@ -84,7 +84,7 @@ export const sections: Section[] = [
             ],
           },
           {
-            name: "Grupa 5-13 lat",
+            name: "Grupa 5-8 i 9-13 lat",
             slots: [{ day: "Czwartek", time: "16:00–17:30" }],
           },
         ],
@@ -93,19 +93,19 @@ export const sections: Section[] = [
         name: "Rumia — SP10 ul. Górnicza 19 (Poniedziałek)",
         groups: [
           {
-            name: "Grupa 5–8",
+            name: "Grupa 5–8 lat",
             slots: [{ day: "Poniedziałek", time: "17:00–18:30" }],
           },
           {
-            name: "Grupa 9–13",
+            name: "Grupa 9–13 lat",
             slots: [{ day: "Poniedziałek", time: "17:00–18:30" }],
           },
           {
-            name: "Grupa 13–15",
+            name: "Grupa 13–15 lat",
             slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
           },
           {
-            name: "Grupa 16–30+",
+            name: "Grupa 16–30+ lat",
             slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
           },
         ],
@@ -123,20 +123,29 @@ export const sections: Section[] = [
         name: "Rumia — SP8 ul. Radziewiczówny (Wtorek)",
         groups: [
           {
-            name: "Grupa 5–8",
+            name: "Grupa 5–8 lat",
             slots: [{ day: "Wtorek", time: "18:00–19:30" }],
           },
           {
-            name: "Grupa 9–13",
+            name: "Grupa 9–13 lat",
             slots: [{ day: "Wtorek", time: "18:00–19:30" }],
           },
           {
-            name: "Grupa 13–15",
+            name: "Grupa 13–15 lat",
             slots: [{ day: "Wtorek", time: "19:30–21:00" }],
           },
           {
-            name: "Grupa 16–30+",
+            name: "Grupa 16–30+ lat",
             slots: [{ day: "Wtorek", time: "19:30–21:00" }],
+          },
+        ],
+      },
+      {
+        name: "Gdynia Pogórze/Oksywie CKZIU, ul. Pułkownika Stanisława Dąbka 207",
+        groups: [
+          {
+            name: "Grupa 5–8 i 9-13 lat",
+            slots: [{ day: "Środa", time: "16:30–18:00" }],
           },
         ],
       },
@@ -155,7 +164,7 @@ export const sections: Section[] = [
             name: "Treningi",
             slots: [
               { day: "Wtorek", time: "17:00–18:30" },
-              { day: "Sobota", time: "09:00–10:30" },
+              { day: "Sobota", time: "09:15–10:45" },
             ],
           },
         ],
@@ -172,16 +181,12 @@ export const sections: Section[] = [
         name: "SP20, ul. Starodworcowa",
         groups: [
           {
-            name: "Grupy zaawansowane 16–30+",
+            name: "Grupy zaawansowane 16–30+ lat",
             slots: [{ day: "Wtorek", time: "18:30–20:00" }],
           },
           {
-            name: "14–16 lat i 17–20+",
+            name: "14–16 lat i 17–20+ lat",
             slots: [{ day: "Czwartek", time: "17:00–18:30" }],
-          },
-          {
-            name: "7–13 i 14–16 lat",
-            slots: [{ day: "Piątek", time: "17:30–18:30" }],
           },
           {
             name: "Wspólny trening",
@@ -195,6 +200,10 @@ export const sections: Section[] = [
           {
             name: "7–13 i 14–16 lat",
             slots: [{ day: "Wtorek", time: "18:00–19:30" }],
+          },
+          {
+            name: "7–13 i 14–16 lat",
+            slots: [{ day: "Piątek", time: "17:30–18:30" }],
           },
         ],
       },
