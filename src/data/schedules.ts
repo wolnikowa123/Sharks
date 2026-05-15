@@ -73,14 +73,14 @@ export const sections: Section[] = [
             name: "Grupa 5–8 lat",
             slots: [
               { day: "Poniedziałek", time: "16:00–17:30" },
-              { day: "Czwartek", time: "17:00–18:30" },
+              { day: "Czwartek", time: "16:00–17:30" },
             ],
           },
           {
             name: "Grupa 8–14 lat",
             slots: [
               { day: "Poniedziałek", time: "16:00–17:30" },
-              { day: "Czwartek", time: "17:00–18:30" },
+              { day: "Czwartek", time: "16:00–17:30" },
             ],
           },
           {
@@ -163,7 +163,7 @@ export const sections: Section[] = [
           {
             name: "Treningi",
             slots: [
-              { day: "Wtorek", time: "17:00–18:30" },
+              { day: "Czwartek", time: "18:00–19:30" },
               { day: "Sobota", time: "09:15–10:45" },
             ],
           },
