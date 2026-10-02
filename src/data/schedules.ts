@@ -19,133 +19,133 @@ export const sections: Section[] = [
         name: "ZSP2, ul. Staffa 10",
         groups: [
           {
-            name: "Grupa 5–7 lat",
+            name: "U10 chłopcy i U11 dziewczynki",
+            slots: [{ day: "Poniedziałek", time: "18:00–19:30" }],
+          },
+          {
+            name: "U10 chłopcy i dziewczynki",
+            slots: [{ day: "Wtorek", time: "17:00–18:00" }],
+          },
+          {
+            name: "U10 chłopcy i U11 dziewczynki",
+            slots: [{ day: "Środa", time: "17:00–18:30" }],
+          },
+          {
+            name: "U11 chłopcy i U13 chłopcy",
+            slots: [{ day: "Środa", time: "18:00–19:30" }],
+          },
+          {
+            name: "U10 chłopcy i U10 dziewczynki",
+            slots: [{ day: "Sobota", time: "11:00–12:00" }],
+          },
+          {
+            name: "U11 chłopcy i U11 dziewczynki",
+            slots: [{ day: "Sobota", time: "12:00–13:30" }],
+          },
+        ],
+      },
+      {
+        name: "SP20, ul. Starodworcowa",
+        groups: [
+          {
+            name: "U11 i U13",
+            slots: [{ day: "Poniedziałek", time: "18:15–19:45" }],
+          },
+          {
+            name: "U10 chłopcy i U10 dziewczynki",
+            slots: [{ day: "Piątek", time: "17:00–18:00" }],
+          },
+        ],
+      },
+      {
+        name: "ZSP3, ul. Nagietkowa",
+        groups: [
+          {
+            name: "U11 chłopcy i U13 chłopcy",
+            slots: [{ day: "Sobota", time: "12:30–14:00" }],
+          },
+        ],
+      },
+      {
+        name: "1 ALO, ul. Narcyzowa",
+        groups: [
+          {
+            name: "U10 i U11 dziewczynki",
             slots: [
-              { day: "Wtorek", time: "17:00–18:00" },
-              { day: "Sobota", time: "11:00–12:00" },
+              { day: "Poniedziałek", time: "17:00–18:30" },
+              { day: "Czwartek", time: "17:00–18:30" },
             ],
           },
           {
-            name: "Grupa 8–12 lat",
+            name: "U10 i U11 chłopcy",
             slots: [
-              { day: "Poniedziałek", time: "18:00–19:30" },
-              { day: "Środa", time: "17:00–18:30" },
-              { day: "Sobota", time: "12:00–13:30" },
-            ],
-          },
-          {
-            name: "Grupa 13–15 lat",
-            slots: [
-              { day: "Środa", time: "18:30–19:50" },
-              { day: "Sobota", time: "12:00–13:30" },
-              {
-                day: "Poniedziałek",
-                time: "18:00–19:30",
-                note: "Trening dodatkowy",
-              },
+              { day: "Poniedziałek", time: "17:00–18:30" },
+              { day: "Czwartek", time: "17:00–18:30" },
             ],
           },
         ],
       },
       {
-        name: "Pustki Cisowskie — SP16, ul. Chabrowa",
+        name: "CZKiU Nr 2, ul. Dąbka",
         groups: [
           {
-            name: "Grupa 5–8 lat",
-            slots: [
-              { day: "Poniedziałek", time: "17:30–19:00" },
-              { day: "Środa", time: "17:30–19:00" },
-            ],
-          },
-          {
-            name: "Grupa 8–14 lat",
-            slots: [
-              { day: "Poniedziałek", time: "17:30–19:00" },
-              { day: "Środa", time: "17:30–19:00" },
-            ],
-          },
-        ],
-      },
-      {
-        name: "Witomino/Wiczlino — 1 ALO, ul. Narcyzowa 6",
-        groups: [
-          {
-            name: "Grupa 5–8 lat",
-            slots: [
-              { day: "Poniedziałek", time: "16:00–17:30" },
-              { day: "Czwartek", time: "16:00–17:30" },
-            ],
-          },
-          {
-            name: "Grupa 8–14 lat",
-            slots: [
-              { day: "Poniedziałek", time: "16:00–17:30" },
-              { day: "Czwartek", time: "16:00–17:30" },
-            ],
-          },
-          {
-            name: "Grupa 5-8 i 9-13 lat",
-            slots: [{ day: "Czwartek", time: "16:00–17:30" }],
-          },
-        ],
-      },
-      {
-        name: "Rumia — SP10 ul. Górnicza 19 (Poniedziałek)",
-        groups: [
-          {
-            name: "Grupa 5–8 lat",
-            slots: [{ day: "Poniedziałek", time: "17:00–18:30" }],
-          },
-          {
-            name: "Grupa 9–13 lat",
-            slots: [{ day: "Poniedziałek", time: "17:00–18:30" }],
-          },
-          {
-            name: "Grupa 13–15 lat",
-            slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
-          },
-          {
-            name: "Grupa 16–30+ lat",
-            slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
-          },
-        ],
-      },
-      {
-        name: "Gdynia SP20, ul. Starodworcowa 36",
-        groups: [
-          {
-            name: "Grupa 5–8 lat",
-            slots: [{ day: "Piątek", time: "17:30–18:30" }],
-          },
-        ],
-      },
-      {
-        name: "Rumia — SP8 ul. Radziewiczówny (Wtorek)",
-        groups: [
-          {
-            name: "Grupa 5–8 lat",
-            slots: [{ day: "Wtorek", time: "18:00–19:30" }],
-          },
-          {
-            name: "Grupa 9–13 lat",
-            slots: [{ day: "Wtorek", time: "18:00–19:30" }],
-          },
-          {
-            name: "Grupa 13–15 lat",
-            slots: [{ day: "Wtorek", time: "19:30–21:00" }],
-          },
-          {
-            name: "Grupa 16–30+ lat",
-            slots: [{ day: "Wtorek", time: "19:30–21:00" }],
-          },
-        ],
-      },
-      {
-        name: "Gdynia Pogórze/Oksywie CKZIU, ul. Pułkownika Stanisława Dąbka 207",
-        groups: [
-          {
-            name: "Grupa 5–8 i 9-13 lat",
+            name: "U10, U11 chłopcy i dziewczynki oraz U13 chłopcy",
             slots: [{ day: "Środa", time: "16:30–18:00" }],
+          },
+        ],
+      },
+      {
+        name: "SP16, ul. Chabrowa",
+        groups: [
+          {
+            name: "U10, U11 chłopcy i dziewczynki oraz U13 chłopcy",
+            slots: [
+              { day: "Poniedziałek", time: "17:30–19:00" },
+              { day: "Środa", time: "17:30–19:00" },
+            ],
+          },
+        ],
+      },
+      {
+        name: "Gdańsk, ul. Człuchowska 6, SP12",
+        groups: [
+          {
+            name: "Wiek 13–15 lat i 16+",
+            slots: [{ day: "Czwartek", time: "19:05–20:35" }],
+          },
+          {
+            name: "Wiek 4–8 lat i 9–12 lat",
+            slots: [{ day: "Sobota", time: "12:00–13:30" }],
+          },
+        ],
+      },
+      {
+        name: "Rumia — SP10, ul. Górnicza 19",
+        groups: [
+          {
+            name: "5–8 lat",
+            slots: [{ day: "Poniedziałek", time: "17:00–18:30" }],
+          },
+          {
+            name: "9–12 lat",
+            slots: [{ day: "Poniedziałek", time: "17:00–18:30" }],
+          },
+          {
+            name: "13–15 lat",
+            slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
+          },
+          {
+            name: "16+",
+            slots: [{ day: "Poniedziałek", time: "18:30–20:00" }],
+          },
+        ],
+      },
+      {
+        name: "Salezjańskie LA, ul. Świętojańska",
+        groups: [
+          {
+            name: "5–8 lat, 9–12 lat, 13–15 lat",
+            slots: [{ day: "Sobota", time: "11:30–13:00" }],
           },
         ],
       },
@@ -161,9 +161,9 @@ export const sections: Section[] = [
         name: "SP20, ul. Starodworcowa",
         groups: [
           {
-            name: "Treningi",
+            name: "Trening",
             slots: [
-              { day: "Czwartek", time: "18:00–19:30" },
+              { day: "Wtorek", time: "17:00–18:30" },
               { day: "Sobota", time: "09:15–10:45" },
             ],
           },
@@ -178,32 +178,27 @@ export const sections: Section[] = [
       "Zwinność, sprawność, pewność siebie. Na zajęciach z Sharks liczy się rozwój i dobra zabawa, a nie rankingi i tabelki. Wybierz pasującą grupę i poziom zaawansowania:",
     venues: [
       {
-        name: "SP20, ul. Starodworcowa",
+        name: "ZSP2, ul. Staffa 10",
         groups: [
           {
-            name: "Grupy zaawansowane 16–30+ lat",
-            slots: [{ day: "Wtorek", time: "18:30–20:00" }],
-          },
-          {
-            name: "14–16 lat i 17–20+ lat",
-            slots: [{ day: "Czwartek", time: "17:00–18:30" }],
-          },
-          {
-            name: "Wspólny trening",
-            slots: [{ day: "Sobota", time: "11:00–12:30" }],
+            name: "7–14 lat",
+            slots: [
+              { day: "Wtorek", time: "18:00–19:00" },
+              { day: "Piątek", time: "17:30–19:00" },
+            ],
           },
         ],
       },
       {
-        name: "ZSP2, ul. Staffa 10",
+        name: "SP20, ul. Starodworcowa",
         groups: [
           {
-            name: "7–13 i 14–16 lat",
-            slots: [{ day: "Wtorek", time: "18:00–19:30" }],
-          },
-          {
-            name: "7–13 i 14–16 lat",
-            slots: [{ day: "Piątek", time: "17:30–18:30" }],
+            name: "15–18+ lat",
+            slots: [
+              { day: "Wtorek", time: "18:30–20:00" },
+              { day: "Czwartek", time: "18:00–19:30" },
+              { day: "Sobota", time: "10:45–12:15" },
+            ],
           },
         ],
       },

@@ -10,6 +10,9 @@ import PortraitTomek from "../assets/portret_TOMEK_1.jpg";
 import PortraitZuza from "../assets/portret_ZUZA.jpg";
 import PortraitLukasz from "../assets/portret_LUKASZ.jpg";
 import PortraitMichal from "../assets/portret_MICHAL.jpg";
+import PortraitAdam from "../assets/adam.jpeg";
+import PortraitAntek from "../assets/antek.jpeg";
+import PortraitMartyna from "../assets/martyna.jpeg";
 
 type Coach = { name: string; role: string; bio: string; photo: string };
 
@@ -122,7 +125,7 @@ const Back = styled(Face)`
 /** --- wspólne img --- */
 const Img = styled.img`
   width: 100%;
-  height: 100%;
+  height: 275px;
   object-fit: cover;
   display: block;
   filter: saturate(0.9) contrast(1.05);
@@ -244,6 +247,18 @@ const data: Coach[] = [
     bio: "Cześć, jestem Tomek - W Sharks Gdynia jestem trenerem zarówno koszykówki jak i piłki nożnej. Koszykówką zajmuje się od 6 lat. Piłką nożną już 11, podczas których trenowałem pod czujnym okiem trenerów w klubie Arka Gdynia.",
   },
   {
+    name: "Antek",
+    role: "Koszykówka",
+    photo: PortraitAntek,
+    bio: "Hej, jestem Antek - jestem studentem Sportu na AWFiS Gdańsk i trenerem koszykówki w Gdynia Sharks. Zajmuję się koszykówką od 3 lat i jestem wychowankiem naszego klubu.",
+  },
+  {
+    name: "Adam",
+    role: "Koszykówka",
+    photo: PortraitAdam,
+    bio: "Cześć, jestem Adam - trener koszykówki oraz trener przygotowania motorycznego. Jako trener pracowałem m.in. w Treflu Sopot. Sam również mam za sobą grę na wysokim poziomie - reprezentowałem Polskę na MŚ w koszykówce 3x3 w Jakarcie. Dziś wykorzystuję to doświadczenie, żeby pomagać młodym zawodnikom rozwijać się zarówno na boisku, jak i poza nim.",
+  },
+  {
     name: "Zuza",
     role: "Siatkówka",
     photo: PortraitZuza,
@@ -261,11 +276,14 @@ const data: Coach[] = [
     photo: PortraitMichal,
     bio: "Hejka, jestem Mateusz – Trener Piłki Siatkowej PZPS nr licencji 1971/2025. Z siatkówką związany od 2002 roku. W pracy z młodzieżą największą radość sprawia mi ich rozwój oraz obserwowanie rosnącego zaangażowania.",
   },
+  {
+    name: "Martyna",
+    role: "Siatkówka",
+    photo: PortraitMartyna,
+    bio: "Hej! jestem Martyna i z siatkówką jestem związana od 8 roku życia, a doświadczenie które przez ten czas zdobyłam staram się jak najlepiej przekazywać swoim zawodnikom. W swojej pracy uwielbiam to, że mogę dzielić się swoją pasją, obserwować rozwój swoich zawodników i cieszyć się z nimi z każdego sukcesu.",
+  },
 ];
-// todo dodac martyne
-// Hej, nazywam się Martyna i jestem trenerką siatkówki w Sharks 🏐
-// Najważniejsze w treningach, które prowadzę, są dla mnie rozwój i rozwijanie wiary we własne umiejętności u dzieci.
-// todo tekst dla michala
+
 /* Desktop / tablet flip card */
 function CoachCardDesktop({ coach }: { coach: Coach }) {
   const [flipped, setFlipped] = React.useState(false);
