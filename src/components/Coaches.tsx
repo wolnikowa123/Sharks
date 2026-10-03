@@ -14,7 +14,16 @@ import PortraitAdam from "../assets/adam.jpeg";
 import PortraitAntek from "../assets/antek.jpeg";
 import PortraitMartyna from "../assets/martyna.jpeg";
 
-type Coach = { name: string; role: string; bio: string; photo: string };
+type Coach = {
+  name: string;
+  role: string;
+  bio: string;
+  photo: string;
+  crop?: {
+    desktop?: string;
+    mobile?: string;
+  };
+};
 
 const Wrap = styled.section`
   padding: 60px 20px;
@@ -123,10 +132,11 @@ const Back = styled(Face)`
 `;
 
 /** --- wspólne img --- */
-const Img = styled.img`
+const Img = styled.img<{ $objectPosition?: string }>`
   width: 100%;
   height: 275px;
   object-fit: cover;
+  object-position: ${({ $objectPosition }) => $objectPosition ?? "center"};
   display: block;
   filter: saturate(0.9) contrast(1.05);
 `;
@@ -184,10 +194,11 @@ const MobileImgWrap = styled.div`
   overflow: hidden;
 `;
 
-const MobileImg = styled.img`
+const MobileImg = styled.img<{ $objectPosition?: string }>`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: ${({ $objectPosition }) => $objectPosition ?? "center"};
   display: block;
   filter: saturate(0.9) contrast(1.05);
 `;
@@ -250,12 +261,20 @@ const data: Coach[] = [
     name: "Antek",
     role: "Koszykówka",
     photo: PortraitAntek,
+    crop: {
+      desktop: "center center",
+      mobile: "center 40%",
+    },
     bio: "Hej, jestem Antek - jestem studentem Sportu na AWFiS Gdańsk i trenerem koszykówki w Gdynia Sharks. Zajmuję się koszykówką od 3 lat i jestem wychowankiem naszego klubu.",
   },
   {
     name: "Adam",
     role: "Koszykówka",
     photo: PortraitAdam,
+    crop: {
+      desktop: "center bottom",
+      mobile: "center 50%",
+    },
     bio: "Cześć, jestem Adam - trener koszykówki oraz trener przygotowania motorycznego. Jako trener pracowałem m.in. w Treflu Sopot. Sam również mam za sobą grę na wysokim poziomie - reprezentowałem Polskę na MŚ w koszykówce 3x3 w Jakarcie. Dziś wykorzystuję to doświadczenie, żeby pomagać młodym zawodnikom rozwijać się zarówno na boisku, jak i poza nim.",
   },
   {
@@ -268,6 +287,10 @@ const data: Coach[] = [
     name: "Łukasz",
     role: "Koszykówka",
     photo: PortraitLukasz,
+    crop: {
+      desktop: "center bottom",
+      mobile: "center 0%",
+    },
     bio: "Siema - jestem Łukasz. W pracy z młodzieżą skupiam się na radości z basketu połączonej z etyką pracy. Każdy trening to dla mnie okazja, by pokazać zawodnikom, że granice ich możliwości są znacznie dalej, niż im się wydaje.",
   },
   {
@@ -280,6 +303,10 @@ const data: Coach[] = [
     name: "Martyna",
     role: "Siatkówka",
     photo: PortraitMartyna,
+    crop: {
+      desktop: "center 18%",
+      mobile: "center 10%",
+    },
     bio: "Hej! jestem Martyna i z siatkówką jestem związana od 8 roku życia, a doświadczenie które przez ten czas zdobyłam staram się jak najlepiej przekazywać swoim zawodnikom. W swojej pracy uwielbiam to, że mogę dzielić się swoją pasją, obserwować rozwój swoich zawodników i cieszyć się z nimi z każdego sukcesu.",
   },
 ];
@@ -307,7 +334,11 @@ function CoachCardDesktop({ coach }: { coach: Coach }) {
         aria-label={`${coach.name} – więcej informacji`}
       >
         <Front>
-          <Img src={coach.photo} alt={coach.name} />
+          <Img
+            src={coach.photo}
+            alt={coach.name}
+            $objectPosition={coach.crop?.desktop ?? "center"}
+          />
           <InfoFront>
             <TitleText>{coach.name}</TitleText>
             <RoleText>{coach.role}</RoleText>
@@ -330,7 +361,11 @@ function CoachCardMobile({ coach }: { coach: Coach }) {
   return (
     <MobileCard>
       <MobileImgWrap>
-        <MobileImg src={coach.photo} alt={coach.name} />
+        <MobileImg
+          src={coach.photo}
+          alt={coach.name}
+          $objectPosition={coach.crop?.mobile ?? "center"}
+        />
       </MobileImgWrap>
       <MobileBody>
         <MobileName>{coach.name}</MobileName>
