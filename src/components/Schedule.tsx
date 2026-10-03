@@ -151,20 +151,57 @@ const DayLabel = styled.h3`
   margin-top: 10px;
 `;
 
-const Row = styled.div`
+const Row = styled.div<{ $isFirst?: boolean }>`
   padding: 8px 0;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "time"
+    "group"
+    "location";
   column-gap: 12px;
   row-gap: 4px;
 
+  ${({ $isFirst }) =>
+    $isFirst &&
+    `
+      border-top: none;
+    `}
+
   @media (min-width: 768px) {
-    grid-template-columns: 15% 25% 60%;
+    grid-template-columns: 15% 45% 40%;
+    grid-template-areas: "time group location";
     align-items: center;
+
+    &:not(:first-child) {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
   }
 
-  & + & {
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  @media (max-width: 768px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "time location"
+      "group group";
+
+    ${({ $isFirst }) =>
+      !$isFirst &&
+      `
+        border-top: 1px solid rgba(15, 124, 143, 0.9);
+      `}
+  }
+`;
+
+const TimeWrap = styled.div`
+  grid-area: time;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
   }
 `;
 
@@ -173,12 +210,12 @@ const TableHeader = styled(Row)`
   font-size: 0.8rem;
   font-weight: 600;
   opacity: 0.75;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: none;
   color: white;
   position: sticky;
   top: 0;
   z-index: 2;
-  grid-template-columns: 15% 25% 60%;
+  grid-template-columns: 15% 45% 40%;
 
   & + & {
     border-top: none;
@@ -192,24 +229,39 @@ const TableHeader = styled(Row)`
 const Time = styled.div`
   font-weight: 600;
   font-size: 0.95rem;
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: top;
+  }
 `;
 
 const GroupName = styled.div`
-  font-weight: 500;
+  grid-area: group;
+  font-weight: 400;
 
   @media (max-width: 768px) {
-    text-align: right;
-    margin-right: 15px;
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    text-align: left;
+    margin-right: 0;
+    font-size: 0.82rem;
   }
 `;
 
 const Extra = styled.div`
+  grid-area: location;
   font-size: 0.85rem;
   opacity: 0.8;
 
   @media (max-width: 768px) {
-    grid-column: 1 / -1;
-    margin-top: 6px;
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: top;
+    width: auto;
+    text-align: right;
   }
 `;
 
@@ -356,8 +408,10 @@ export default function Schedule() {
                   <div>Lokalizacja</div>
                 </TableHeader>
                 {dayRows.map((r, i) => (
-                  <Row key={day + i}>
-                    <Time>{r.time}</Time>
+                  <Row key={day + i} $isFirst={i === 0}>
+                    <TimeWrap>
+                      <Time>{r.time}</Time>
+                    </TimeWrap>
                     <GroupName>{r.groupName}</GroupName>
                     <Extra>
                       {r.venueName}
